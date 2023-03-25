@@ -1,0 +1,52 @@
+.input_section{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+
+.data_section{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+
+/* Table Style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: green;
+    color: black;
+  }
+  
+  /* Table Header Style */
+  th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Table Row Style */
+  tr {
+    background-color: #fff;
+  }
+  
+  /* Table Row Stripe Style */
+  tr:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  /* Table Cell Style */
+  td {
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  

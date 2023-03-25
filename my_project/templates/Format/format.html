@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %} {% endblock title %}
+    </title>
+    {% block link %} {% endblock link %}
+    <link rel="stylesheet" href="{% static 'Format/format.css' %}"
+    
+</head>
+<body>
+    <!-- ---------------------------------navbar -->
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Business Solutions</a>
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+          <div class="login-signup">
+            <a href="#">Login</a>
+            <a href="#">Sign up</a>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- -------------------Body section -->
+      {% block section %} {% endblock section %}
+</body>
+</html>

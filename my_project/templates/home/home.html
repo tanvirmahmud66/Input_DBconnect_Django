@@ -1,0 +1,34 @@
+{% extends 'Format/format.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+{% block link %} <link rel="stylesheet" href="{% static 'home/home.css'%}"/>{% endblock link %}
+
+
+{% block section %}
+    <div class="input_section">
+        <Form action="" method="POST" >{% csrf_token %}
+            {{form}}
+            <br/>
+            <br/>
+            <input  type="submit" value="Submit">
+        </Form>
+    </div>
+    <div class="data_section">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Contact</th>
+            </tr>
+            {% for each in register %}
+                <tr>
+                    <td>{{each.name}}</td>
+                    <td>{{each.email}}</td>
+                    <td>{{each.password}}</td>
+                    <td>{{each.contact}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock section %}
