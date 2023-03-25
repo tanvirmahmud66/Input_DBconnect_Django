@@ -18,3 +18,7 @@ def home_index(request):
         reg = Reg.objects.all()
         contact_input = ContactInput()
         return render(request, 'home/home.html', {"register": reg, "form": contact_input})
+
+
+def home_another(request):
+    return render(request, 'home/another.html')
